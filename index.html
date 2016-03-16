@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Bike Index</h1>
+    <h2>What city would you like to search for stolen bikes?</h2>
+    <form id="city-form">
+      <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" id="city" class="form-control" value="portland">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    <div class="bikes">
+      <ul class="bike-info">
+      </ul>
+    </div>
+    
+    <div class="bike-stats">
+      <p>Title: <span class="title"></span></p>
+      <p>Stolen From: <span class="from"></span></p>
+      <p>Frame Model: <span class="frame"></span></p>
+      <p>Year: <span class="year"></span></p>
+    </div>
+  </body>
+</html>
