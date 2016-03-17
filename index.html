@@ -7,13 +7,14 @@
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Title</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="header row">
-        <h1>BYKEFNDR</h1>
-      </div>
+  <body class="container-fluid">
+    <div class="header row">
+      <h1>BYKEFYNDR.io</h1>
+      <h5>Search Stolen Bikes In Your City</h5>
+    </div>
+    <div class="main container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 col-md-offset-2">
           <h2>What city would you like to search for stolen bikes?</h2>
           <form id="city-form">
             <div class="form-group">
@@ -24,8 +25,8 @@
           </form>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-8">
+      <div class="bikeResults row">
+        <div class="col-md-8 col-md-offset-2">
           <h4 class="searching">Results for <span class="search-city"></span>:</h4>
           <div class="bikes">
             <ul class="bike-info">
@@ -34,5 +35,8 @@
         </div>
       </div>
     </div>
+    <!-- <footer class="row">
+      <p>BYKEFNDR - Created using the BikeIndex API</p>
+    </footer> -->
   </body>
 </html>

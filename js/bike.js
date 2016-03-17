@@ -1,7 +1,6 @@
 exports.bikeGetter = function(city) {
-  $.get('https://bikeindex.org:443/api/v2/bikes_search/stolen?page=999&per_page=999&proximity=' + city + '%2C%20OR&proximity_square=100').then(function(response) {
+  $.get('https://bikeindex.org:443/api/v2/bikes_search/stolen?page=1&per_page=100&proximity=' + city + '%2C%20OR&proximity_square=100').then(function(response) {
     $.each(response.bikes, function(i, bike){
-      console.log(response);
       titley = this.title;
       yearModel = this.year;
       manufacturerName = this.manufacturer_name;

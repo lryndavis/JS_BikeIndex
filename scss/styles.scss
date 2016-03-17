@@ -6,10 +6,34 @@
 }
 
 body {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
   background: #eee;
 }
 
-.bikes h4 {
+.header {
+  display: flex;
+  padding-left: 5%;
+  background: #ccc;
+  min-height: 125px;
+  flex-grow: 10;
+  h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    transform: rotate(-8deg);
+    font-weight: 600;
+  }
+  h5 {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    margin-left: -30px;
+  }
+}
+
+.searching {
   padding-bottom: 10px;
   border-bottom: 2px solid #489;
 }
@@ -31,6 +55,7 @@ li {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .bike {
@@ -40,4 +65,28 @@ ul {
 
 .searching {
   display: none;
+  margin: 25px 0;
+}
+
+.search-city {
+  font-weight: bold;
+}
+
+.main {
+
+  flex-grow: 1;
+}
+footer {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  align-self: flex-end;
+  background: #ccc;
+  height: 50px;
+  justify-content: flex-end;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
 }
