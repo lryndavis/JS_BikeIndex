@@ -26,5 +26,13 @@
     "jshint": "^2.9.1",
     "vinyl-source-stream": "^1.1.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lryndavis/bike_index.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lryndavis/bike_index/issues"
+  },
+  "homepage": "https://github.com/lryndavis/bike_index#readme",
   "description": ""
 }
