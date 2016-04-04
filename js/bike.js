@@ -1,7 +1,7 @@
 exports.bikeGetter = function(city) {
   $.get('https://bikeindex.org:443/api/v2/bikes_search/stolen?page=1&per_page=100&proximity=' + city + '%2C%20OR&proximity_square=100').then(function(response) {
     $.each(response.bikes, function(i, bike){
-      titley = this.title;
+      title = this.title;
       yearModel = this.year;
       manufacturerName = this.manufacturer_name;
       stolenFrom = this.stolen_location;
@@ -25,11 +25,11 @@ exports.bikeGetter = function(city) {
                   '</div>';
       $(".searching").show();
       $(".search-city").text(city);
-      $('.bike-info').append('<li class="bike" id=' + i + '>' + titley + bikeStats + '</li>');
+      $('.bike-info').append('<li class="bike" id=' + i + '>' + title + bikeStats + '</li>');
     });
       $('.bike-info').off("click",".bike");
       $('.bike-info').on("click",".bike", function(){
-        $(".bike-data" + this.id).slideToggle();
+      $(".bike-data" + this.id).slideToggle();
     });
     }).fail(function(error) {
     $('.bike-info').text(error.responseJSON.message);
